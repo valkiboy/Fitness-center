@@ -3,25 +3,26 @@
 
 // Default
 
-$black:               #000000;
 $white:               #ffffff;
-$grey-white:          #f2f5f6;
-$grey:                #c4c4c4;
-$blue:                #00b2ff;
-$bg-blue:             #00b3ff;
-$dark-blue:           #041827;
-$black-blue:           #041427;
-$ghostly-white:       #f8fdff;
-$bg-main:             #335a7b;
-$bg-hover:            #0b5c9e;
-$bg-input:          #04142726;
-$bg-color:          #04182780;
-$bg-opacolor:       #00000000;
-$bg-over:           #03101bb2;
-$c-hover:             #d8632d;
-$b-grey:              #ebebeb;
+$dark-blue:           #10265480;
+$black-blue:          #102654;
+$grey-blue:           #495a7d;
+$grey:                #e8e8e8;
+$blue:                #103aae;
+$color:               linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 
-$ff-roboto:                         "Roboto", "Arial", sans-serif;
+
+
+$bg-main:             conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$bg-hover-button:     linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$bg-hover-border:     linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+$bg-section:          #f8fdfc;
+$bg-red:              #ed0233;
+$bg-hover-list:       #102654e3;
+$bg-blue:             #1c3374;
+$bg-black-blue:       #030a1a;
+
+$ff-bebas-neue:                     "Bebas Neue", "Arial", monospace;
 
 $ff-roboto-condensed:               "Roboto Condensed", "Arial", sans-serif;
 
