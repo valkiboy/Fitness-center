@@ -9,7 +9,9 @@
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeue-Book.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -82,7 +84,7 @@
         </g>
       </symbol>
     </svg>
-    <div class="page-header__wrapper wrapper">
+    <div class="page-header__wrapper wrapper container">
       <div class="page-header__logo-wrapper">
         <a>
           <div class="page-header__logotype">
@@ -96,17 +98,19 @@
         <a class="page-header__phone" href="tel:88005555555" aria-label="наш телефон">8-800-555-55-55</a>
       </div>
     </div>
-    <section class="main-block">
+    <section class="main-block container">
       <div class="main-block__wrapper wrapper">
-        <div class="main-block__inner">
-          <ul class="main-block__list">
-            <li>Тренажёрный зал</li>
-            <li>Групповые занятия</li>
-            <li>Кардио-зона</li>
-          </ul>
-          <div class="main-block__title">
-            <h1>Фитнес центр</h1>
-            <p>омск</p>
+        <div class="main-block__wrap">
+          <div class="main-block__inner">
+            <ul class="main-block__list">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <div class="main-block__title">
+              <h1>Фитнес центр</h1>
+              <p>омск</p>
+            </div>
           </div>
           <a href="#" class="main-block__button button noselect js-trigger">Купить абонемент</a>
         </div>
@@ -128,75 +132,78 @@
         <ul class="main-block__social-list">
           <li class="main-block__social-item">
             <a href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="footer-social__fb-header" width="13" height="9">
-                <use xlink:href="#fb-header"></use>
-              </svg>
-            </a>
+              <span class="visually-hidden">Фейсбук</span>fb</a>
           </li>
           <li class="main-block__social-item">
             <a href="https://vk.com/">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="footer-social__vk-header" width="14" height="9">
-                <use xlink:href="#vk-header"></use>
-              </svg>
-            </a>
+              <span class="visually-hidden">Вконтакте</span>vk</a>
           </li>
           <li class="main-block__social-item">
             <a href="https://www.instagram.com/">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="footer-social__ig-header" width="11" height="9">
-                <use xlink:href="#ig-header"></use>
-              </svg>
-            </a>
+              <span class="visually-hidden">Инстаграм</span>ig</a>
           </li>
         </ul>
       </div>
     </section>
   </header>
   <main>
-    <section class="gym">
-      <div class="gym__title-wrapper">
-        <h2>Тренажерный зал</h2>
-        <p>Просторный зал площадью 900 кв/м</p>
-        <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
-          и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-          <span> В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
-            Также
-            в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
-        </p>
-      </div>
-      <div class="gim__picture-wrapper">
-        <picture>
-          <!-- 1х: 320px; 2x: 640px -->
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="./img/content/hall-m.webp 1x, ./img/content/hall-m@2x.webp 2x">
-          <!-- 1х: 678px; 2x: 1356px -->
-          <source type="image/webp" media="(max-width: 1199px)"
-            srcset="./img/content/hall-t.webp 1x, ./img/content/hall-t@2x.webp 2x">
-          <!-- 1х: 660px; 2x: 1320px -->
-          <source type="image/webp" srcset="./img/content/hall-d.webp 1x, ./img/content/hall-d@2x.webp 2x">
-          <!-- 1х: 320px; 2x: 640px -->
-          <source media="(max-width: 767px)" srcset="./img/content/hall-m.jpg 1x, ./img/content/hall-m@2x.jpg 2x">
-          <!-- 1х: 678px; 2x: 1356px -->
-          <source media="(max-width: 1199px)" srcset="./img/content/hall-t.jpg 1x, ./img/content/hall-t@2x.jpg 2x">
-          <!-- 1х: 660px; 2x: 1320px -->
-          <img src="./img/content/hall-d.jpg" srcset="./img/content/hall-d@2x.jpg 2x" width="660" height="401"
-            alt="Фото транзисторов на плате">
-        </picture>
-      </div>
-      <div class="gim__video-wrapper">
-        <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+    <div class="visually-hidden">
+      <section class="gym">
+        <div class="gym__title-wrapper">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <span> В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+              Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+          </p>
+        </div>
+        <div class="gim__picture-wrapper">
+          <picture>
+            <!-- 1х: 320px; 2x: 640px -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/content/hall-m.webp 1x, ./img/content/hall-m@2x.webp 2x">
+            <!-- 1х: 678px; 2x: 1356px -->
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/content/hall-t.webp 1x, ./img/content/hall-t@2x.webp 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source type="image/webp" srcset="./img/content/hall-d.webp 1x, ./img/content/hall-d@2x.webp 2x">
+            <!-- 1х: 320px; 2x: 640px -->
+            <source media="(max-width: 767px)" srcset="./img/content/hall-m.jpg 1x, ./img/content/hall-m@2x.jpg 2x">
+            <!-- 1х: 678px; 2x: 1356px -->
+            <source media="(max-width: 1199px)" srcset="./img/content/hall-t.jpg 1x, ./img/content/hall-t@2x.jpg 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <img src="./img/content/hall-d.jpg" srcset="./img/content/hall-d@2x.jpg 2x" width="660" height="401"
+              alt="Фото транзисторов на плате">
+          </picture>
+        </div>
+        <div class="gim__video-wrapper">
+          <video width="364" height="228" controls="controls">
+            <sourse src="https://youtu.be/9TZXsZItgdw" type="video">
+          </video>
           <button>
             <svg class="play" width="100" height="100" aria-label="Кнопка play">
               <use xlink:href="#play"></use>
             </svg>
           </button>
-      </div>
-    </section>
+        </div>
+      </section>
+      <section class="season-tickets">
+        <div class="season-tickets__wrapper">
+          <div class="season-tickets__nav">
+            <ul class="season-tickets__nav-list">
+              <li class="season-tickets__nav-item current">1 месяц</li>
+              <li class="season-tickets__nav-item">6 месяцев</li>
+              <li class="season-tickets__nav-item">12 месяцев</li>
+            </ul>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
   </footer>

@@ -37,3 +37,23 @@
     url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
     url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeue-Book.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Bold.woff") format("woff");
+}
