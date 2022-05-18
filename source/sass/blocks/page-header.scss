@@ -1,0 +1,90 @@
+.page-header {
+  background: $bg-main;
+  min-height: 658px;
+
+  @media (max-width: $vp-1199) {
+    min-height: 554px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 491px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 50px;
+
+  @media (max-width: $vp-1199) {
+    min-height: 80px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 35px;
+  }
+}
+
+.page-header__logo-wrapper {
+  fill: $white;
+  height: 20px;
+
+  @media (max-width: $vp-1199) {
+    width: 80px;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.page-header__logo-wrapper svg {
+  @media (max-width: $vp-1199) {
+    width: 82px;
+    height: 19px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 68px;
+    height: 16px;
+  }
+}
+
+.page-header__phone-wrapper {
+  height: 22px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 18px;
+  }
+}
+
+.page-header__phone {
+  color: $white;
+  font-family: $ff-bebas-neue;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 30%;
+  }
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -19,12 +19,23 @@
   user-select: none;
 }
 
+.wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
 
+  @media (max-width: $vp-1199) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
-.page-body {
-  background-color: rgb(152, 206, 228);
+  @media (max-width: $vp-767) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-button {
-  background-color: inherit;
+.container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 }
