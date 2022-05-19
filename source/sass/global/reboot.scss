@@ -24,7 +24,13 @@ img,
 video {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+h2 {
+  font-family: $ff-bebas-neue;
+  color: $black-blue;
 }
 
 p {
