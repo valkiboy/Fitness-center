@@ -780,7 +780,7 @@ input:-ms-input-placeholder {
 
 .gym__video-wrapper {
   margin-left: 77px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -789,6 +789,7 @@ input:-ms-input-placeholder {
 .gym__video-wrap {
   margin-left: auto;
   margin-right: auto;
+  height: 235px;
 }
 
 .video {
@@ -843,6 +844,203 @@ input:-ms-input-placeholder {
 
 .video__button:hover .circle-two {
   fill: #ed0233;
+}
+
+.season-tickets {
+  background-color: #f8fdfc;
+}
+
+.season-tickets__wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+.season-tickets__wrapper h2 {
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin: 0 auto 39px;
+  padding-left: 337px;
+  padding-top: 113px;
+  width: 900px;
+}
+
+.season-tickets__nav-list {
+  list-style: none;
+  padding: 0 0 0 45px;
+  margin: 0 auto 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #10265480;
+  position: relative;
+  min-height: 43px;
+  width: 900px;
+  overflow: hidden;
+}
+
+.season-tickets__nav-list::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 341px;
+  background: #78787833;
+  top: 41px;
+  left: 278px;
+}
+
+.season-tickets__nav-item--current {
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
+}
+
+.season-tickets__nav-list li {
+  margin-right: 47px;
+  cursor: pointer;
+}
+
+.season-tickets__nav-list li:hover {
+  opacity: 50%;
+}
+
+.season-tickets__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.season-tickets__list li {
+  background-color: #ffffff;
+  width: 31%;
+  min-height: 448px;
+  margin-bottom: 120px;
+  border: 7px solid transparent;
+  z-index: 1;
+}
+
+.season-tickets__list li:hover {
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.season-tickets__list h3 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  padding-top: 56px;
+}
+
+.season-tickets__list h3 + p {
+  margin: 0 0 65px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.season-tickets__list p + p {
+  margin: 0 0 34px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #103aae;
+  position: relative;
+  z-index: 1;
+}
+
+.season-tickets__shadow {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  color: #e8e8e8;
+  z-index: -1;
+  top: -54px;
+  left: 71px;
+}
+
+.season-tickets__list svg {
+  fill: #102654;
+  z-index: 1;
+}
+
+.season-tickets__list a {
+  display: block;
+  width: 208px;
+  min-height: 66px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 2px solid #102654;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.season-tickets__item:hover a {
+  color: #ffffff;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: transparent;
+  padding-top: 26px;
+}
+
+.season-tickets__wrap {
+  display: none;
+}
+
+.season-tickets__wrap--current {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .season-tickets {
+    position: relative;
+  }
+
+  .season-tickets::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/content/pancakes-d.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 415px;
+    bottom: -72px;
+    right: 6px;
+    background-size: 286px;
+    z-index: 0;
+  }
+
+  .season-tickets__list li:not(:nth-child(3n)) {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .season-tickets::after {
+    background-image: url("../img/content/pancakes-d@2x.png");
+  }
 }
 
 @media (max-width: 1199px) {
@@ -982,6 +1180,10 @@ input:-ms-input-placeholder {
     margin-left: 0;
   }
 
+  .gym__video-wrap {
+    height: 183px;
+  }
+
   .video__button {
     width: 73px;
     height: 73px;
@@ -990,6 +1192,67 @@ input:-ms-input-placeholder {
   .video__button-shape {
     width: 73px;
     height: 73px;
+  }
+
+  .season-tickets__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .season-tickets__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .season-tickets__wrapper h2 {
+    font-size: 42px;
+    line-height: 42px;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    padding-top: 95px;
+    margin-bottom: 34px;
+  }
+
+  .season-tickets__nav-list::before {
+    width: 332px;
+    left: 84px;
+    top: 38px;
+  }
+
+  .season-tickets__nav-list {
+    font-size: 18px;
+    line-height: 27px;
+    width: 500px;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding-left: 84px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 40px;
+    margin-bottom: 44px;
+  }
+
+  .season-tickets__nav-list li {
+    margin-right: 54px;
+  }
+
+  .season-tickets__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .season-tickets__list li {
+    width: 442px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .season-tickets__shadow {
+    left: 113px;
   }
 }
 
@@ -1111,6 +1374,76 @@ input:-ms-input-placeholder {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+
+  .gym__video-wrap {
+    height: 238px;
+  }
+
+  .season-tickets__wrapper h2 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-top: 65px;
+    margin-bottom: 25px;
+  }
+
+  .season-tickets__nav-list::before {
+    width: 740px;
+    left: 0;
+    top: 38px;
+  }
+
+  .season-tickets__nav-list {
+    font-size: 16px;
+    line-height: 24px;
+    width: 290px;
+    padding-left: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 31px;
+  }
+
+  .season-tickets__nav-list li {
+    margin-right: 2px;
+    min-width: 60px;
+  }
+
+  .season-tickets__list li {
+    width: 290px;
+    min-height: 384px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  .season-tickets__list h3 {
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 45px;
+  }
+
+  .season-tickets__list h3 + p {
+    margin-bottom: 53px;
+  }
+
+  .season-tickets__list p + p {
+    font-size: 48px;
+    line-height: 72px;
+    padding-left: 2px;
+    margin-bottom: 30px;
+  }
+
+  .season-tickets__shadow {
+    font-size: 80px;
+    line-height: 120px;
+    left: 58px;
+    top: -44px;
+  }
+
+  .season-tickets__list svg {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 767px) {
@@ -1133,5 +1466,11 @@ input:-ms-input-placeholder {
   .gym__picture-wrapper {
     width: 80%;
     height: 345px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .season-tickets__list li {
+    width: 30%;
   }
 }
