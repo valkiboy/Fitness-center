@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/BebasNeue-Book.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -45,7 +46,7 @@
               <p>омск</p>
             </div>
           </div>
-          <a href="#" class="main-block__button button noselect js-trigger">Купить абонемент</a>
+          <a href="#season-tickets" class="main-block__button button noselect js-trigger">Купить абонемент</a>
         </div>
         <div class="main-block__pictures-wrapper">
           <picture>
@@ -142,12 +143,12 @@
               <defs>
                 <linearGradient id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#ED0233" />
+                  <stop offset="1" stop-color="#ED0233" />
                   <stop offset="1" stop-color="#003EB7" />
                 </linearGradient>
                 <linearGradient id="paint1_linear_1_155" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#003D85" />
+                  <stop offset="0" stop-color="#003D85" />
                   <stop offset="0.885417" stop-color="#B80027" />
                 </linearGradient>
               </defs>
@@ -156,19 +157,139 @@
         </div>
       </div>
     </section>
-    <div class="visually-hidden">
-      <section class="season-tickets">
-        <div class="season-tickets__wrapper">
-          <div class="season-tickets__nav">
-            <ul class="season-tickets__nav-list">
-              <li class="season-tickets__nav-item current">1 месяц</li>
-              <li class="season-tickets__nav-item">6 месяцев</li>
-              <li class="season-tickets__nav-item">12 месяцев</li>
-            </ul>
-          </div>
+    <section class="season-tickets" id="season-tickets">
+      <div class="season-tickets__wrapper container">
+        <h2>Абонементы</h2>
+        <div class="season-tickets__nav">
+          <ul class="season-tickets__nav-list">
+            <li class="season-tickets__nav-item season-tickets__nav-item--current" tabindex="0">1 месяц</li>
+            <li class="season-tickets__nav-item" tabindex="0">6 месяцев</li>
+            <li class="season-tickets__nav-item" tabindex="0">12 месяцев</li>
+          </ul>
         </div>
-      </section>
-    </div>
+        <div class="season-tickets__wrap season-tickets__wrap--current">
+          <ul class="season-tickets__list">
+            <li class="season-tickets__item">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <p>5000 <span class="season-tickets__shadow">5000</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00 </p>
+              <p>1700 <span class="season-tickets__shadow">1700</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p>2700 <span class="season-tickets__shadow">2700</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+        <div class="season-tickets__wrap">
+          <ul class="season-tickets__list">
+            <li class="season-tickets__item">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <p>25500 <span class="season-tickets__shadow">25500</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00 </p>
+              <p>8700 <span class="season-tickets__shadow">8700</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p>13700 <span class="season-tickets__shadow">13700</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+        <div class="season-tickets__wrap">
+          <ul class="season-tickets__list">
+            <li class="season-tickets__item">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <p>42000 <span class="season-tickets__shadow">42000</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00 </p>
+              <p>14000 <span class="season-tickets__shadow">14000</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="season-tickets__item">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p>23000 <span class="season-tickets__shadow">23000</span>
+                <span>
+                  <svg width="30" height="42" aria-label="Рубль">
+                    <use xlink:href="img/sprite/sprite.svg#rouble"></use>
+                  </svg>
+                </span>
+              </p>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
   </footer>

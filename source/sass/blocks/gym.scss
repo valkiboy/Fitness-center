@@ -144,7 +144,7 @@
 
 .gym__video-wrapper {
   margin-left: 77px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   transform: translateY(-50%);
 
   @media (max-width: $vp-1199) {
@@ -163,4 +163,13 @@
 .gym__video-wrap {
   margin-left: auto;
   margin-right: auto;
+  height: 235px;
+
+  @media (max-width: $vp-1199) {
+    height: 183px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 238px;
+  }
 }
