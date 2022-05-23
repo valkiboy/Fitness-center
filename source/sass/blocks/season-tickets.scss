@@ -1,6 +1,6 @@
 .season-tickets {
   background-color: $bg-section;
-  // background-color: blue;
+
   @media (min-width: $vp-1200) {
     position: relative;
 
@@ -10,35 +10,27 @@
       position: absolute;
       background-image: url("../img/content/pancakes-d.png");
       background-repeat: no-repeat;
-      width: 280px;
+      width: 286px;
       height: 415px;
       bottom: -72px;
-      right: 6px;
+      right: 0;
       background-size: 286px;
       z-index: 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/content/pancakes-d@2x.png");
       }
-
-      //   @media (min-width: $vp-768) and (max-width: $vp-1199) {
-      //     background-image: url("../img/content/pancakes-t.png");
-
-      //     @media (min-resolution: 2dppx) {
-      //       background-image: url("../img/content/pancakes-t@2x.png");
-      //     }
-      //   }
     }
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 36px;
   }
 }
 
 .season-tickets__wrapper {
   padding-left: 103px;
   padding-right: 103px;
-
-  @media (max-width: $vp-1199) {
-    margin-bottom: 50px;
-  }
 
   @media (max-width: $vp-1199) {
     padding-left: 15px;
