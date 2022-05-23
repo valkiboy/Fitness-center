@@ -1,0 +1,238 @@
+.coaches {
+  position: relative;
+  padding-top: 113px;
+  margin-bottom: 120px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 95px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 66px;
+  }
+}
+
+.coaches h2 {
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-left: 1px;
+  margin-bottom: 56px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coaches__swiper-slide {
+  position: relative;
+  width: 260px;
+  height: 294px;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__description {
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+  overflow: hidden;
+  color: $white;
+  width: 100%;
+}
+
+.coaches__description h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin: 0;
+  text-align: center;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 9px;
+  }
+}
+
+.coaches__description h4 {
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  display: none;
+}
+
+.coaches__description ul {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.coaches__swiper-slide:hover .coaches__description {
+  background-color: $bg-hover-list;
+  width: 260px;
+  box-sizing: border-box;
+  height: 294px;
+  padding-left: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  overflow: auto;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+    padding-left: 5px;
+    padding-right: 1px;
+  }
+}
+
+.coaches__swiper-slide:focus-within .coaches__description {
+  background-color: $bg-hover-list;
+  width: 260px;
+  box-sizing: border-box;
+  height: 294px;
+  padding-left: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.coaches__swiper-slide:hover h3 {
+  padding-top: 53px;
+
+  @media (max-width: $vp-1199) {
+    padding-right: 16px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 45px;
+  }
+}
+
+.coaches__swiper-slide:focus-within h3 {
+  padding-top: 53px;
+
+  @media (max-width: $vp-1199) {
+    padding-right: 7px;
+  }
+}
+
+.coaches__swiper-slide:hover h4 {
+  display: block;
+  padding-left: 79px;
+  margin-bottom: 32px;
+}
+
+.coaches__swiper-slide:focus-within h4 {
+  display: block;
+  padding-left: 79px;
+  margin-bottom: 32px;
+}
+
+.coaches__swiper-slide:hover ul {
+  display: block;
+  padding-left: 46px;
+}
+
+.coaches__swiper-slide:focus-within ul {
+  display: block;
+  padding-left: 46px;
+}
+
+.coaches__swiper-slide:hover li {
+  margin-bottom: 13px;
+}
+
+.coaches__swiper-slide:focus-within li {
+  margin-bottom: 13px;
+}
+
+.coaches__swiper-slide li {
+  position: relative;
+}
+
+.coaches__swiper-slide li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/svg/dot.svg");
+  height: 6px;
+  width: 6px;
+  top: 7px;
+  left: -16px;
+}
+
+.coaches__button-prev {
+  position: absolute;
+  bottom: 135px;
+  left: 51px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $grey-arrow;
+  border-style: solid solid none none;
+  transform: rotate(225deg);
+
+  @media (max-width: $vp-767) {
+    bottom: 128px;
+    left: 17px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.coaches__button-next {
+  position: absolute;
+  bottom: 135px;
+  right: 51px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $grey-arrow;
+  border-style: solid solid none none;
+  transform: rotate(45deg);
+
+  @media (max-width: $vp-767) {
+    bottom: 128px;
+    right: 17px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.coaches img {
+  width: 260px;
+  height: 294px;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+    height: 294px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
+}
