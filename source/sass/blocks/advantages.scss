@@ -1,7 +1,22 @@
 .advantages {
   background-color: $bg-section;
   min-height: 664px;
-  padding-top: 74px;
+  padding-top: 114px;
+  padding-left: 103px;
+  padding-right: 103px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 95px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 66px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .advantages h2 {
@@ -10,15 +25,19 @@
   letter-spacing: 0.03em;
   padding-left: 394px;
   margin-bottom: 71px;
+  margin-top: 0;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
     line-height: 42px;
+    padding-left: 179px;
+    margin-bottom: 47px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 32px;
+    padding-left: 0;
   }
 }
 
@@ -30,6 +49,15 @@
   padding-left: 0;
   margin-left: 79px;
   width: 90%;
+
+  @media (max-width: $vp-1199) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    display: block;
+  }
 }
 
 .advantages__item {
@@ -37,6 +65,19 @@
   display: flex;
   width: 35%;
   margin-bottom: 156px;
+
+  @media (max-width: $vp-1199) {
+    width: 48%;
+    margin-bottom: 323px;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 39px;
+  }
 }
 
 .advantages__item-center {
@@ -60,6 +101,10 @@
     top: 153px;
     left: 301px;
     background-color: $advant-line;
+
+    @media (max-width: $vp-1199) {
+      display: none;
+    }
   }
 
   &::before {
@@ -71,15 +116,33 @@
     top: 153px;
     right: 300px;
     background-color: $advant-line;
+
+    @media (max-width: $vp-1199) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+    width: 442px;
+    min-height: 239px;
+    top: 120px;
+    left: calc(45% + 34px);
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: $vp-767) {
+    position: static;
+    transform: translateX(0);
+    width: 100%;
   }
 }
 
 .advantages__numbers {
   min-width: 77px;
-}
 
-.advantages__numbers-center {
-  padding-left: 0;
+  @media (max-width: $vp-1199) {
+    min-width: 50px;
+  }
 }
 
 .advantages__numbers span {
@@ -89,6 +152,11 @@
   background: $color-number;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  @media (max-width: $vp-1199) {
+    font-size: 58px;
+    line-height: 56px;
+  }
 }
 
 .advantages__numbers p {
@@ -100,19 +168,39 @@
 }
 
 .advantages__numbers-center p {
-  padding-top: 64px;
-}
-
-.advantages__item-center p {
   color: $white;
   font-size: 71px;
   font-weight: 700;
   line-height: 55px;
+  margin-top: 0;
   margin-bottom: 12px;
+  padding-left: 0;
+  padding-top: 64px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 74px;
+    line-height: 55px;
+    padding-top: 42px;
+    padding-right: 5px;
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $vp-1199) {
+    padding-top: 47px;
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__description {
   width: 71%;
+
+  @media (max-width: $vp-1199) {
+    width: 82%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
 }
 
 .advantages__description-center {
@@ -130,6 +218,14 @@
   @media (max-width: $vp-1199) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 33px;
+    margin-bottom: 3px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 0;
+    padding-top: 4px;
+    margin-bottom: 2px;
   }
 }
 
@@ -138,11 +234,17 @@
   font-weight: 700;
   line-height: 39px;
   padding-left: 0;
+  margin-top: 0;
   margin-bottom: 31px;
 
   @media (max-width: $vp-1199) {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 9px;
   }
 }
 
@@ -154,11 +256,13 @@
   min-width: 208px;
 
   @media (max-width: $vp-1199) {
-
+    font-weight: 400;
   }
 
   @media (max-width: $vp-767) {
     text-align: center;
+    padding-left: 45px;
+    width: 87%;
   }
 }
 
@@ -166,14 +270,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  padding-left: 36px;
-  width: 81%;
+  padding-left: 35px;
+  width: 86%;
+  text-align: center;
+  margin: 0;
 
   @media (max-width: $vp-1199) {
-
+    width: 70%;
+    padding-left: 132px;
   }
 
   @media (max-width: $vp-767) {
-    text-align: center;
+    width: 78%;
+    padding-left: 71px;
+    margin-bottom: 10px;
   }
 }
