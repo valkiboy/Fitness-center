@@ -1,0 +1,259 @@
+.promotions {
+  padding-top: 114px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 95px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 66px;
+    text-align: center;
+  }
+}
+
+.promotions h2 {
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0 0 56px;
+  text-align: center;
+
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.promotions__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 678px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+  }
+}
+
+.promotions__main-wrapper {
+  display: flex;
+  width: 49%;
+  margin-right: 37px;
+
+  @media (max-width: $vp-1199) {
+    width: 678px;
+    // width: 100%;
+    margin-right: 0;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.promotions__main {
+  background-color: $bg-red;
+  color: $white;
+  width: 50%;
+  // height: 100%;
+  padding-top: 33px;
+  padding-left: 44px;
+
+  @media (max-width: $vp-1199) {
+    width: 41%;
+    padding-bottom: 46px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.promotions__main h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 44px;
+  margin: 0;
+}
+
+.promotions__main span {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+.promotions__main p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+  width: 100%;
+  padding-top: 25px;
+  padding-right: 40px;
+  margin-bottom: 80%;
+  // margin-bottom: 188px;
+
+  @media (max-width: $vp-767) {
+    padding-top: 20px;
+    padding-left: 46px;
+    padding-right: 0;
+    width: 84%;
+    margin-bottom: 11%;
+  }
+}
+
+.promotions__main a {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  display: block;
+  width: 79px;
+  min-height: 10px;
+  border-bottom: 1px solid $white;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 106px;
+  }
+}
+
+.promotions__picture-wrapper {
+  width: 280px;
+  // height: 462px;
+
+  @media (max-width: $vp-1199) {
+    width: 59%;
+    // width: 399px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+  }
+}
+
+.promotions__secondary-wrapper {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: row;
+    // width: 100%;
+    width: 678px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+    flex-direction: column;
+  }
+}
+
+.promotions__secondary {
+  border: 7px solid;
+  border-image: $bg-hover-border;
+  border-image-slice: 1;
+  width: 100%;
+  min-height: 211px;
+  color: $bg-blue;
+  padding-left: 29px;
+  padding-right: 10px;
+
+  @media (max-width: $vp-1199) {
+    width: 324px;
+  }
+
+  @media (max-width: $vp-767) {
+    // width: 100%;
+    width: 290px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.promotions__secondary br {
+  display: none;
+
+  @media (max-width: $vp-1199) {
+    display: block;
+  }
+
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
+.promotions__secondary h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 46px;
+  color: $bg-blue;
+  margin: 0;
+  padding-top: 14px;
+
+  @media (max-width: $vp-767) {
+    padding-top: 24px;
+  }
+}
+
+.promotions__secondary p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0 0 44px;
+  min-height: 50px;
+
+  @media (max-width: $vp-767) {
+    width: 80%;
+    padding-left: 56px;
+    margin-bottom: 22px;
+  }
+}
+
+.promotions__secondary a {
+  color: $bg-blue;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  display: block;
+  width: 68px;
+  min-height: 8px;
+  border-bottom: 1px solid $bg-blue;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 104px;
+  }
+}

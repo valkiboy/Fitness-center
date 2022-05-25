@@ -20,12 +20,12 @@ new Swiper('.coaches__swiper', {
 
   // Стрелки
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coaches__button-next',
+    prevEl: '.coaches__button-prev',
   },
 
   // Отключаем скрол на ПК
-  // simulateTouch: false,
+  simulateTouch: false,
 
   // Бесконечная прокрутка
   loop: true,
@@ -64,4 +64,17 @@ new Swiper('.coaches__swiper', {
       initialSlide: 0,
     }
   },
+});
+
+new Swiper('.reviews__swiper', {
+
+  // Стрелки
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+
+  // Отключаем скрол на ПК
+  simulateTouch: false,
+
 });
