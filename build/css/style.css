@@ -2156,6 +2156,10 @@ input:-ms-input-placeholder {
   color: #ffffff;
 }
 
+.page-footer__item a:hover {
+  opacity: 50%;
+}
+
 .footer-social__list {
   list-style: none;
   fill: #ffffff;

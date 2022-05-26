@@ -93,6 +93,10 @@
 
 .page-footer__item a {
   color: $white;
+
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 .page-footer__logo-wrapper svg {
