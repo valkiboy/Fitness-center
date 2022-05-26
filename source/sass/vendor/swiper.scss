@@ -179,3 +179,8 @@
     scroll-snap-align: center center;
   }
 }
+
+.swiper-wrap .swiper-button-disabled {
+  opacity: 30%;
+  cursor: default;
+}

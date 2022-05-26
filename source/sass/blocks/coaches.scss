@@ -198,6 +198,10 @@
   transform: rotate(225deg);
   cursor: pointer;
 
+  &:hover {
+    opacity: 30%;
+  }
+
   @media (max-width: $vp-767) {
     bottom: 128px;
     left: 17px;
@@ -217,6 +221,10 @@
   border-style: solid solid none none;
   transform: rotate(45deg);
   cursor: pointer;
+
+  &:hover {
+    opacity: 30%;
+  }
 
   @media (max-width: $vp-767) {
     bottom: 128px;

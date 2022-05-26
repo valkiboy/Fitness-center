@@ -78,7 +78,7 @@
 
   @media (max-width: $vp-1199) {
     width: 41%;
-    padding-bottom: 46px;
+    padding-bottom: 36px;
   }
 
   @media (max-width: $vp-767) {
@@ -107,9 +107,8 @@
   margin: 0;
   width: 100%;
   padding-top: 25px;
-  padding-right: 40px;
+  padding-right: 10px;
   margin-bottom: 80%;
-  // margin-bottom: 188px;
 
   @media (max-width: $vp-767) {
     padding-top: 20px;
@@ -132,6 +131,7 @@
   width: 79px;
   min-height: 10px;
   border-bottom: 1px solid $white;
+  margin-bottom: 10px;
 
   &:hover {
     opacity: 50%;
@@ -248,6 +248,7 @@
   width: 68px;
   min-height: 8px;
   border-bottom: 1px solid $bg-blue;
+  margin-bottom: 10px;
 
   &:hover {
     opacity: 50%;

@@ -1,5 +1,6 @@
 .reviews {
   padding-top: 94px;
+  position: relative;
 
   @media (max-width: $vp-1199) {
     padding-top: 75px;
@@ -32,6 +33,14 @@
 
 .reviews__swiper {
   margin-bottom: 121px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 99px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 70px;
+  }
 }
 
 .reviews__swiper-slide {
@@ -105,7 +114,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin: 0;
+  margin: 0 0 10px;
 
   @media (max-width: $vp-767) {
     text-align: center;
@@ -114,7 +123,7 @@
 
 .reviews__button-prev {
   position: absolute;
-  bottom: 230px;
+  bottom: 109px;
   left: 25.7%;
   width: 23px;
   height: 23px;
@@ -124,18 +133,22 @@
   transform: rotate(225deg);
   cursor: pointer;
 
+  &:hover {
+    opacity: 30%;
+  }
+
   @media (min-width: $vp-1200) and (max-width: $vp-1320) {
     left: 22.7%;
   }
 
   @media (max-width: $vp-1199) {
     left: 6.4%;
-    bottom: 231px;
+    bottom: 110px;
   }
 
   @media (max-width: $vp-767) {
     left: 6.4%;
-    bottom: 282px;
+    bottom: 161px;
     width: 14px;
     height: 14px;
   }
@@ -143,7 +156,7 @@
 
 .reviews__button-next {
   position: absolute;
-  bottom: 230px;
+  bottom: 109px;
   right: 25.7%;
   width: 23px;
   height: 23px;
@@ -153,17 +166,21 @@
   transform: rotate(45deg);
   cursor: pointer;
 
+  &:hover {
+    opacity: 30%;
+  }
+
   @media (min-width: $vp-1200) and (max-width: $vp-1320) {
     right: 22.7%;
   }
 
   @media (max-width: $vp-1199) {
     right: 6.4%;
-    bottom: 231px;
+    bottom: 110px;
   }
 
   @media (max-width: $vp-767) {
-    bottom: 282px;
+    bottom: 161px;
     right: 17px;
     width: 14px;
     height: 14px;
