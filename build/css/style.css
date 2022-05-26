@@ -1086,7 +1086,6 @@ input:-ms-input-placeholder {
 }
 
 .season-tickets__nav-list {
-  list-style: none;
   padding: 0 0 0 45px;
   margin: 0 auto 38px;
   display: -webkit-box;
@@ -1103,7 +1102,6 @@ input:-ms-input-placeholder {
   position: relative;
   min-height: 43px;
   width: 900px;
-  overflow: hidden;
 }
 
 .season-tickets__nav-list::before {
@@ -1120,7 +1118,7 @@ input:-ms-input-placeholder {
 .season-tickets__nav-item {
   color: #10265480;
   margin-right: 47px;
-  cursor: pointer;
+  display: block;
 }
 
 .season-tickets__nav-item:hover {
@@ -3009,9 +3007,9 @@ input:-ms-input-placeholder {
   }
 
   .season-tickets__nav-list::before {
-    width: 740px;
+    width: 290px;
     left: 0;
-    top: 38px;
+    top: 36px;
   }
 
   .season-tickets__nav-list {
@@ -3019,10 +3017,11 @@ input:-ms-input-placeholder {
     line-height: 24px;
     width: 290px;
     padding-left: 0;
+    min-height: 38px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   .season-tickets__nav-item {
