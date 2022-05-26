@@ -173,7 +173,7 @@
 .main-block__social-list {
   list-style: none;
   padding: 0;
-  margin: auto 0 33px 0;
+  margin: auto -9px 37px 0;
   text-align: right;
 
   @media (max-width: $vp-1199) {
@@ -183,8 +183,12 @@
 
 .main-block__social-list a {
   fill: $white;
-  margin-bottom: 12px;
-  display: block;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 
   &:hover {
     opacity: 30%;

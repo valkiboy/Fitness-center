@@ -93,7 +93,7 @@
     </section>
   </header>
   <main>
-    <section class="gym container">
+    <section class="gym container" id="gym">
       <div class="gym__title-wrapper">
         <h2>Тренажерный зал</h2>
         <p>Просторный зал площадью 900 кв/м</p>
@@ -143,14 +143,14 @@
             <source media="(max-width: 1023px)"
               srcset="./img/content/hall-video-t.jpg 1x, ./img/content/hall-video-t@2x.jpg 2x">
             <!-- 1х: 364px; 2x: 728px -->
-            <img class="video__media" src="./img/content/hall-video-d.jpg" srcset="./img/content/hall-video-d@2x.jpg 2x"
+            <img class="gym__media" src="./img/content/hall-video-d.jpg" srcset="./img/content/hall-video-d@2x.jpg 2x"
               width="364" height="228" alt="Фото заля с тренажерами">
           </picture>
-          <button class="video__button">
-            <svg class="video__button-shape" width="100" height="100" viewBox="0 0 100 100">
-              <circle class="circle-one" cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_155)" stroke-opacity="0.2"
+          <button class="gym__button">
+            <svg class="gym__button-shape" width="100" height="100" viewBox="0 0 100 100">
+              <circle class="gym__circle" cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_155)" stroke-opacity="0.2"
                 stroke-width="2" />
-              <circle class="circle-two" cx="50" cy="50" r="36" fill="url(#paint1_linear_1_155)" />
+              <circle class="gym__circle" cx="50" cy="50" r="36" fill="url(#paint1_linear_1_155)" />
               <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
               <defs>
                 <linearGradient id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
@@ -301,7 +301,7 @@
         </div>
       </div>
     </section>
-    <section class="promo wrapper container">
+    <section class="promo wrapper container" id="promo">
       <div class="promo__games">
         <h2>super games</h2>
         <div class="promo__event">
@@ -340,7 +340,7 @@
         </picture>
       </div>
     </section>
-    <section class="coaches wrapper container">
+    <section class="coaches wrapper container" id="coaches">
       <h2>Тренеры</h2>
       <div class="coaches__swiper swiper image-slider">
         <div class="coaches__swiper-wrapper swiper-wrapper image-slider__wrapper">
@@ -659,7 +659,7 @@
         </li>
       </ul>
     </section>
-    <section class="promotions wrapper container">
+    <section class="promotions wrapper container" id="promotions">
       <h2>Акции</h2>
       <div class="promotions__wrapper">
         <div class="promotions__main-wrapper">
@@ -706,7 +706,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews wrapper container">
+    <section class="reviews wrapper container swiper-wrap">
       <h2>Отзывы</h2>
       <div class="reviews__swiper swiper">
         <div class="reviews__swiper-wrapper swiper-wrapper">
@@ -721,7 +721,7 @@
                   srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp"
-                  srcset="./img/content/coach-3-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 68px; 2x: 136px -->
                 <source media="(max-width: 767px)"
                   srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
@@ -750,7 +750,7 @@
                   srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp"
-                  srcset="./img/content/coach-3-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 68px; 2x: 136px -->
                 <source media="(max-width: 767px)"
                   srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
@@ -780,7 +780,7 @@
                   srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp"
-                  srcset="./img/content/coach-3-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
                 <!-- 1х: 68px; 2x: 136px -->
                 <source media="(max-width: 767px)"
                   srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
@@ -804,8 +804,109 @@
       <button class="reviews__button-prev swiper-button-prev"></button>
       <button class="reviews__button-next swiper-button-next"></button>
     </section>
+    <section class="contacts container">
+      <div class="contacts__wrapper">
+        <div class="contacts__form-wrapper">
+          <div class="contacts__form-inner">
+            <h2>Бесплатное занятие</h2>
+            <form class="contacts__form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
+              <div>
+                <label for="name" class="visually-hidden"></label>
+                <input type="text" id="name" name="name" placeholder="Имя" required aria-label="Введите ваше имя">
+              </div>
+              <div>
+                <label for="telephone" class="visually-hidden"></label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Телефон" required
+                  aria-label="Введите ваш телефон">
+              </div>
+              <button class="contacts__form__button noselect" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="contacts__inner">
+          <h2>Контакты</h2>
+          <div class="contacts__wrap">
+            <div>
+              <h3>Адрес:</h3>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </div>
+            <div>
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+            <div>
+              <h3>Телефон:</h3>
+              <a href="tel:88005555555" aria-label="наш телефон">8-800-555-55-55</a>
+            </div>
+            <div>
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru" aria-label="наша почта">omsk@supergym.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper wrapper container">
+      <nav class="page-footer__nav noselect">
+        <div class="page-footer__logo-wrapper">
+          <div class="page-footer__logo">
+            <a>
+              <div class="page-footer__logotype">
+                <svg width="87" height="20" aria-label="Логотип Fitness-center">
+                  <use xlink:href="img/sprite/sprite.svg#logotype"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <a href="#gym" class="js-trigger">Услуги</a>
+        </div>
+        <div class="page-footer__item">
+          <a href="#season-tickets" class="js-trigger">Абонементы</a>
+        </div>
+        <div class="page-footer__item">
+          <a href="#promotions" class="js-trigger">Акции</a>
+        </div>
+        <div class="page-footer__item">
+          <a href="#coaches" class="js-trigger">Тренеры</a>
+        </div>
+        <div class="page-footer__item">
+          <a href="#contacts" class="js-trigger">Расписание</a>
+        </div>
+      </nav>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <ul class="footer-social__list">
+          <li>
+            <a href="https://vk.com/">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="footer-social__vk-footer" width="24" height="13">
+                <use xlink:href="img/sprite/sprite.svg#vk-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="footer-social__ig-footer" width="24" height="24">
+                <use xlink:href="img/sprite/sprite.svg#ig-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="footer-social__fb-footer" width="12" height="24">
+                <use xlink:href="img/sprite/sprite.svg#fb-footer"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </footer>
 
 
