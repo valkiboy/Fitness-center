@@ -1,6 +1,5 @@
 // Swiper 7.4.1
 import './vendor/swiper';
-import Swiper from './vendor/swiper';
 
 import './vendor/moveto';
 import MoveTo from './vendor/moveto';
@@ -62,7 +61,7 @@ new Swiper('.coaches__swiper', {
       spaceBetween: 40,
       // С какого слайда начинать
       initialSlide: 0,
-    }
+    },
   },
 });
 
