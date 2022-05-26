@@ -93,7 +93,7 @@ if (typeof (tabTitle && tabContent) !== 'undefined' && tabTitle && tabContent !=
   tabTitle.forEach(function (item) {
     item.addEventListener('click', function (evt) {
       let numb = tabTitle.length;
-
+      evt.preventDefault();
       for (let i = 0; i < numb; i++) {
         if (evt.currentTarget === tabTitle[i]) {
           getDeliteTabTitleCurrentStyle();

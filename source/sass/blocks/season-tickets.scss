@@ -76,7 +76,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  color: $dark-blue;
+  // color: $dark-blue;
   position: relative;
   min-height: 43px;
   width: 900px;
@@ -128,12 +128,8 @@
   }
 }
 
-.season-tickets__nav-item--current {
-  color: $black-blue;
-  border-bottom: 2px solid $current-line;
-}
-
-.season-tickets__nav-list li {
+.season-tickets__nav-item {
+  color: $dark-blue;
   margin-right: 47px;
   cursor: pointer;
 
@@ -149,6 +145,11 @@
     margin-right: 2px;
     min-width: 60px;
   }
+}
+
+.season-tickets__nav-item--current {
+  color: $black-blue;
+  border-bottom: 2px solid $current-line;
 }
 
 .season-tickets__list {
