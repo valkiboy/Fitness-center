@@ -52,7 +52,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
   }
 }
 
@@ -240,6 +240,7 @@
 
   @media (max-width: $vp-767) {
     column-count: 1;
+    margin-left: -1px;
   }
 }
 
