@@ -3,10 +3,12 @@
   min-height: 658px;
 
   @media (max-width: $vp-1199) {
+    background: $bg-main-t;
     min-height: 554px;
   }
 
   @media (max-width: $vp-767) {
+    background: $bg-main-m;
     min-height: 491px;
   }
 }

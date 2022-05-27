@@ -2257,6 +2257,7 @@ input:-ms-input-placeholder {
   }
 
   .page-header {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 554px;
   }
 
@@ -2903,6 +2904,7 @@ input:-ms-input-placeholder {
   }
 
   .page-header {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 491px;
   }
 
