@@ -6,6 +6,7 @@
   <meta name="description" content="Описание проекта">
   <title>Fitness-center</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -315,7 +316,7 @@
           </div>
         </div>
         <p class="promo__paragraf">Ежегодные соревнования по CrossFit</p>
-        <a href="#" class="noselect">заполнить заявку</a>
+        <a href="#" class="promo__button noselect">заполнить заявку</a>
       </div>
       <div class="promo__picture-wrapper">
         <picture>
@@ -344,7 +345,7 @@
       <h2>Тренеры</h2>
       <div class="coaches__swiper swiper image-slider">
         <div class="coaches__swiper-wrapper swiper-wrapper image-slider__wrapper">
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-1" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -376,7 +377,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-2" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -408,7 +409,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-3" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -440,7 +441,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-4" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -472,7 +473,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-5" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -504,7 +505,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-6" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -536,7 +537,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-7" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -568,7 +569,7 @@
               </ul>
             </div>
           </div>
-          <div class="coaches__swiper-slide swiper-slide image-slider__slide" tabindex="0">
+          <div class="coaches__swiper-slide swiper-slide image-slider__slide-8" tabindex="0">
             <div class="coaches__picture-wrapper">
               <picture>
                 <!-- 1х: 226px; 2x: 452px -->
@@ -629,12 +630,14 @@
           </div>
         </li>
         <li class="advantages__item advantages__item-3 advantages__item-center">
-          <div class="advantages__numbers-center">
-            <p class="advantages__number-center">100</p>
-          </div>
-          <div class="advantages__description-center">
-            <h3>Тренажеров</h3>
-            <p>Современные тренажеры на все группы мышц</p>
+          <div class="advantages__inner-center">
+            <div class="advantages__numbers-center">
+              <p class="advantages__number-center">100</p>
+            </div>
+            <div class="advantages__description-center">
+              <h3>Тренажеров</h3>
+              <p>Современные тренажеры на все группы мышц</p>
+            </div>
           </div>
         </li>
         <li class="advantages__item advantages__item-4">
@@ -667,7 +670,7 @@
             <h3>Год</h3>
             <span>4999</span>
             <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-            <a href="#" class="noselect">подробнее</a>
+            <a href="#" class="promotions__main-button noselect">подробнее</a>
           </div>
           <div class="promotions__picture-wrapper">
             <picture>
@@ -700,7 +703,7 @@
           </div>
           <div class="promotions__secondary">
             <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
+            <p>Корпоративный фитнес <br> с&nbsp;командой</p>
             <a href="#" class="noselect">подробнее</a>
           </div>
         </div>
@@ -708,101 +711,103 @@
     </section>
     <section class="reviews wrapper container swiper-wrap">
       <h2>Отзывы</h2>
-      <div class="reviews__swiper swiper">
-        <div class="reviews__swiper-wrapper swiper-wrapper">
-          <div class="reviews__swiper-slide swiper-slide">
-            <div class="reviews__picture-wrapper">
-              <picture>
-                <!-- 1х: 68px; 2x: 136px -->
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 68px; 2x: 136px -->
-                <source media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
-                  height="80" alt="Фото">
-              </picture>
+      <div class="reviews__wrap">
+        <div class="reviews__swiper swiper">
+          <div class="reviews__swiper-wrapper swiper-wrapper">
+            <div class="reviews__swiper-slide swiper-slide">
+              <div class="reviews__picture-wrapper">
+                <picture>
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
+                    height="80" alt="Фото">
+                </picture>
+              </div>
+              <div class="reviews__description">
+                <h3>Анна Орлова</h3>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+              </div>
             </div>
-            <div class="reviews__description">
-              <h3>Анна Орлова</h3>
-              <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+            <div class="reviews__swiper-slide swiper-slide">
+              <div class="reviews__picture-wrapper">
+                <picture>
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
+                    height="80" alt="Фото">
+                </picture>
+              </div>
+              <div class="reviews__description">
+                <h3>Юлия Тушканчик</h3>
+                <p>&laquo;Не&nbsp;хожу в&nbsp;SuperClub уже больше года. Не&nbsp;понравилось, что в&nbsp;клубе всегда
+                  чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                  очередей&raquo;</p>
+              </div>
             </div>
-          </div>
-          <div class="reviews__swiper-slide swiper-slide">
-            <div class="reviews__picture-wrapper">
-              <picture>
-                <!-- 1х: 68px; 2x: 136px -->
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 68px; 2x: 136px -->
-                <source media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
-                  height="80" alt="Фото">
-              </picture>
-            </div>
-            <div class="reviews__description">
-              <h3>Юлия Тушканчик</h3>
-              <p>&laquo;Не&nbsp;хожу в&nbsp;SuperClub уже больше года. Не&nbsp;понравилось, что в&nbsp;клубе всегда
-                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
-                очередей&raquo;</p>
-            </div>
-          </div>
-          <div class="reviews__swiper-slide swiper-slide">
-            <div class="reviews__picture-wrapper">
-              <picture>
-                <!-- 1х: 68px; 2x: 136px -->
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp"
-                  srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
-                <!-- 1х: 68px; 2x: 136px -->
-                <source media="(max-width: 767px)"
-                  srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <source media="(max-width: 1199px)"
-                  srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
-                <!-- 1х: 80px; 2x: 160px -->
-                <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
-                  height="80" alt="Фото">
-              </picture>
-            </div>
-            <div class="reviews__description">
-              <h3>Ирина Волкова</h3>
-              <p>&laquo;Не&nbsp;хожу в&nbsp;SuperClub уже больше года. Не&nbsp;понравилось, что в&nbsp;клубе всегда
-                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
-                очередей&raquo;</p>
+            <div class="reviews__swiper-slide swiper-slide">
+              <div class="reviews__picture-wrapper">
+                <picture>
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.webp 1x, ./img/content/reviews-ava1-m@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp"
+                    srcset="./img/content/reviews-ava1-d.webp 1x, ./img/content/reviews-ava1-d@2x.webp 2x">
+                  <!-- 1х: 68px; 2x: 136px -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/content/reviews-ava1-m.jpg 1x, ./img/content/reviews-ava1-m@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/content/reviews-ava1-d.jpg 1x, ./img/content/reviews-ava1-d@2x.jpg 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="./img/content/reviews-ava1-d.jpg" srcset="./img/content/reviews-ava1-d@2x.jpg 2x" width="80"
+                    height="80" alt="Фото">
+                </picture>
+              </div>
+              <div class="reviews__description">
+                <h3>Ирина Волкова</h3>
+                <p>&laquo;Не&nbsp;хожу в&nbsp;SuperClub уже больше года. Не&nbsp;понравилось, что в&nbsp;клубе всегда
+                  чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                  очередей&raquo;</p>
+              </div>
             </div>
           </div>
         </div>
+        <button class="reviews__button-prev swiper-button-prev"></button>
+        <button class="reviews__button-next swiper-button-next"></button>
       </div>
-      <button class="reviews__button-prev swiper-button-prev"></button>
-      <button class="reviews__button-next swiper-button-next"></button>
     </section>
     <section class="contacts container">
       <div class="contacts__wrapper">
@@ -826,21 +831,25 @@
         <div class="contacts__inner">
           <h2>Контакты</h2>
           <div class="contacts__wrap">
-            <div>
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            <div class="contacts__inn">
+              <div>
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div>
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
             </div>
-            <div>
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            <div>
-              <h3>Телефон:</h3>
-              <a href="tel:88005555555" aria-label="наш телефон">8-800-555-55-55</a>
-            </div>
-            <div>
-              <h3>Email:</h3>
-              <a href="mailto:omsk@supergym.ru" aria-label="наша почта">omsk@supergym.ru</a>
+            <div class="contacts__inn">
+              <div>
+                <h3>Телефон:</h3>
+                <a href="tel:88005555555" aria-label="наш телефон">8-800-555-55-55</a>
+              </div>
+              <div>
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru" aria-label="наша почта">omsk@supergym.ru</a>
+              </div>
             </div>
           </div>
         </div>

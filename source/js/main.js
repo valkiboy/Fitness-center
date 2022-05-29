@@ -5,7 +5,8 @@ const myName = document.getElementById('name');
 const myPhone = document.getElementById('telephone');
 const contactsForm = document.querySelector('.contacts__form');
 
-const rephone = /([0-9]+)$/;
+
+const rephone = /^\d+$/;
 const rename = /^[a-zA-Zа-яА-Я'\s]+[a-zA-Zа-яА-Я'\s]{0,}$/u;
 
 // Удаляю заставку и кнопку и меняю на айфрейм
@@ -169,4 +170,74 @@ if (typeof (contactsForm) !== 'undefined' && contactsForm !== null) {
     evt.target.reset();
   };
   contactsForm.addEventListener('submit', handleFormSubmit);
+}
+
+
+// Слайдер
+
+const promoButton = document.querySelector('.promo__button');
+const coachesButtonPrev = document.querySelector('.coaches__button-prev');
+const coachesButtonNext = document.querySelector('.coaches__button-next');
+// const imageSlidesFirst = document.querySelector('.image-slider__slide-1');
+const imageSlidesTwo = document.querySelectorAll('.image-slider__slide-2');
+const imageSlideThree = document.querySelector('.image-slider__slide-3');
+// const imageSlideLast = document.querySelector('.image-slider__slide-8');
+const promotionsMainButton = document.querySelector('.promotions__main-button');
+
+
+if (typeof (promoButton && coachesButtonPrev) !== 'undefined' && promoButton && coachesButtonPrev !== null) {
+
+  promoButton.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      coachesButtonPrev.focus();
+    }
+  });
+
+
+  coachesButtonPrev.addEventListener('keydown', function (evt) {
+    if (evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      promoButton.focus();
+    }
+  });
+}
+
+if (typeof (coachesButtonNext && imageSlideThree) !== 'undefined' && coachesButtonNext && imageSlideThree !== null) {
+
+
+  coachesButtonNext.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      imageSlideThree.focus();
+    }
+  });
+
+
+  imageSlideThree.addEventListener('keydown', function (evt) {
+    if (evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      coachesButtonNext.focus();
+    }
+  });
+}
+
+if (typeof (imageSlidesTwo && promotionsMainButton) !== 'undefined' && imageSlidesTwo && promotionsMainButton !== null) {
+
+
+  imageSlidesTwo.forEach(function (imageSlideTwo) {
+    imageSlideTwo.addEventListener('keydown', function (evt) {
+      if (!evt.shiftKey && evt.key === 'Tab') {
+        evt.preventDefault();
+        promotionsMainButton.focus();
+      }
+
+      promotionsMainButton.addEventListener('keydown', function (event) {
+        if (event.shiftKey && event.key === 'Tab') {
+          event.preventDefault();
+          imageSlideTwo.focus();
+        }
+      });
+    });
+  });
 }

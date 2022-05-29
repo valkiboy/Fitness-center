@@ -250,7 +250,11 @@
   color: $grey;
   z-index: -1;
   top: -54px;
-  left: 71px;
+  left: 21%;
+
+  @media (min-width: $vp-1200) and (max-width: $vp-1365) {
+    left: 9%;
+  }
 
   @media (max-width: $vp-1199) {
     left: 113px;

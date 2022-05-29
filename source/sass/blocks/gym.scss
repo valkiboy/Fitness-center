@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding-left: 103px;
   padding-right: 103px;
+  position: relative;
 
   @media (max-width: $vp-1199) {
     flex-direction: column;
@@ -23,6 +24,7 @@
 .gym__title-wrapper {
   width: 36%;
   padding-left: 60px;
+  margin-bottom: 259px;
 
   @media (max-width: $vp-1199) {
     width: 100%;
@@ -143,18 +145,17 @@
 }
 
 .gym__video-wrapper {
-  margin-left: 77px;
-  margin-bottom: 20px;
-  transform: translateY(-50%);
   position: relative;
   width: 364px;
   height: 228px;
   background-color: $bg-black-blue;
 
   @media (max-width: $vp-1199) {
+    transform: translateY(-50%);
     width: 266px;
     height: 167px;
-    margin-left: 0;
+    margin-bottom: 20px;
+    // margin-left: 0;
   }
 
   @media (max-width: $vp-767) {
@@ -165,12 +166,16 @@
 }
 
 .gym__video-wrap {
-  margin-left: auto;
-  margin-right: auto;
   height: 235px;
+  position: absolute;
+  left: 539px;
+  top: 408px;
 
   @media (max-width: $vp-1199) {
+    margin-left: auto;
+    margin-right: auto;
     height: 183px;
+    position: static;
   }
 
   @media (max-width: $vp-767) {
