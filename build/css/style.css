@@ -1825,10 +1825,6 @@ input:-ms-input-placeholder {
   width: 280px;
 }
 
-.promotions__picture-wrapper img {
-  height: 100%;
-}
-
 .promotions__secondary-wrapper {
   width: 49%;
   display: -webkit-box;
@@ -2266,6 +2262,10 @@ input:-ms-input-placeholder {
 
   .coaches .coaches__swiper {
     width: 860px;
+  }
+
+  .promotions__picture-wrapper img {
+    height: 100%;
   }
 
   .promotions__secondary-wrapper div:not(:last-child) {
