@@ -11,6 +11,10 @@
   }
 }
 
+.reviews__wrap {
+  position: relative;
+}
+
 .reviews h2 {
   font-size: 49px;
   line-height: 49px;
@@ -93,6 +97,8 @@
   @media (max-width: $vp-767) {
     margin-top: 48px;
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -103,10 +109,14 @@
   line-height: 30px;
   text-align: left;
 
+  @media (min-width: $vp-380) and (max-width: $vp-767) {
+    margin-bottom: 21%;
+  }
+
   @media (max-width: $vp-767) {
     line-height: 26px;
     padding-left: 96px;
-    margin-bottom: 24px;
+    margin-bottom: 15%;
   }
 }
 
@@ -123,8 +133,8 @@
 
 .reviews__button-prev {
   position: absolute;
-  bottom: 109px;
-  left: 25.7%;
+  bottom: 110px;
+  left: 21.4%;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -138,17 +148,17 @@
   }
 
   @media (min-width: $vp-1200) and (max-width: $vp-1320) {
-    left: 22.7%;
+    left: 12.7%;
   }
 
   @media (max-width: $vp-1199) {
-    left: 6.4%;
-    bottom: 110px;
+    left: 0.6%;
+    // bottom: 110px;
   }
 
   @media (max-width: $vp-767) {
-    left: 6.4%;
-    bottom: 161px;
+    left: 1.4%;
+    bottom: 159px;
     width: 14px;
     height: 14px;
   }
@@ -156,8 +166,8 @@
 
 .reviews__button-next {
   position: absolute;
-  bottom: 109px;
-  right: 25.7%;
+  bottom: 110px;
+  right: 21.4%;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -171,17 +181,17 @@
   }
 
   @media (min-width: $vp-1200) and (max-width: $vp-1320) {
-    right: 22.7%;
+    right: 12.7%;
   }
 
   @media (max-width: $vp-1199) {
-    right: 6.4%;
-    bottom: 110px;
+    right: 0.6%;
+    // bottom: 110px;
   }
 
   @media (max-width: $vp-767) {
-    bottom: 161px;
-    right: 17px;
+    bottom: 159px;
+    right: 1.4%;
     width: 14px;
     height: 14px;
   }
@@ -196,6 +206,6 @@
 
   @media (max-width: $vp-767) {
     text-align: center;
-    width: 226px;
+    width: 70vw;
   }
 }

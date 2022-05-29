@@ -33,6 +33,10 @@
     padding-top: 51px;
     margin-bottom: 49px;
   }
+
+  @media (max-width: $vp-767) {
+    justify-content: flex-end;
+  }
 }
 
 .main-block__list {
@@ -149,8 +153,8 @@
 
   @media (max-width: $vp-767) {
     width: 290px;
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
