@@ -167,9 +167,7 @@
 }
 
 .promotions__picture-wrapper img {
-  @media (min-width: $vp-1200) {
-    height: 100%;
-  }
+  min-height: 100%;
 
   @media (max-width: $vp-767) {
     object-fit: cover;
