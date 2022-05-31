@@ -216,7 +216,7 @@
     content: "";
     position: absolute;
     display: block;
-    height: 102px;
+    height: 76%;
     width: 1px;
     top: 6px;
     left: 41.6%;
@@ -246,7 +246,7 @@
 
 .contacts__inn {
   width: 269px;
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
 
   @media (max-width: $vp-1199) {
     width: 290px;
@@ -260,6 +260,7 @@
 }
 
 .contacts__inn div {
+  width: 214px;
   margin-bottom: 18px;
 
   @media (max-width: $vp-1199) {

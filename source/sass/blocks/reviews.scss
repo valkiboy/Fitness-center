@@ -133,7 +133,7 @@
 
 .reviews__button-prev {
   position: absolute;
-  bottom: 110px;
+  top: 110px;
   left: 21.4%;
   width: 23px;
   height: 23px;
@@ -158,7 +158,7 @@
 
   @media (max-width: $vp-767) {
     left: 1.4%;
-    bottom: 159px;
+    top: 161px;
     width: 14px;
     height: 14px;
   }
@@ -166,7 +166,7 @@
 
 .reviews__button-next {
   position: absolute;
-  bottom: 110px;
+  top: 110px;
   right: 21.4%;
   width: 23px;
   height: 23px;
@@ -190,7 +190,7 @@
   }
 
   @media (max-width: $vp-767) {
-    bottom: 159px;
+    top: 161px;
     right: 1.4%;
     width: 14px;
     height: 14px;
