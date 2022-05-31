@@ -141,6 +141,17 @@
   padding-right: 25px;
   bottom: 0;
   overflow: auto;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+    padding-left: 5px;
+    padding-right: 1px;
+  }
 }
 
 .coaches__swiper-slide:hover h3 {
@@ -171,7 +182,7 @@
   padding-top: 53px;
 
   @media (max-width: $vp-1199) {
-    padding-right: 7px;
+    padding-right: 16px;
   }
 
   @media (max-width: $vp-767) {

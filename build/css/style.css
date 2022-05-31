@@ -2653,6 +2653,10 @@ input:-ms-input-placeholder {
     width: 268px;
   }
 
+  .coaches__swiper-slide:focus-within .coaches__description {
+    width: 268px;
+  }
+
   .coaches__swiper-slide:hover h3 {
     padding-right: 16px;
   }
@@ -2662,7 +2666,7 @@ input:-ms-input-placeholder {
   }
 
   .coaches__swiper-slide:focus-within h3 {
-    padding-right: 7px;
+    padding-right: 16px;
   }
 
   .coaches img {
@@ -3282,6 +3286,13 @@ input:-ms-input-placeholder {
   }
 
   .coaches__swiper-slide:focus .coaches__description {
+    width: 226px;
+    height: 274px;
+    padding-left: 5px;
+    padding-right: 1px;
+  }
+
+  .coaches__swiper-slide:focus-within .coaches__description {
     width: 226px;
     height: 274px;
     padding-left: 5px;
