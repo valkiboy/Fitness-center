@@ -15,7 +15,7 @@ links.forEach(function (link) {
   moveTo.registerTrigger(link);
 });
 
-new Swiper('.coaches__swiper', {
+const swiper = new Swiper('.coaches__swiper', {
 
   // Стрелки
   navigation: {

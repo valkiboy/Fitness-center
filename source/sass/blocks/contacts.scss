@@ -169,11 +169,13 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0 0 3px;
+  padding-right: 40px;
 
   @media (max-width: $vp-1199) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 6px;
+    padding-right: 0;
   }
 }
 
@@ -182,10 +184,12 @@
   font-weight: 400;
   line-height: 21px;
   margin: 0;
+  padding-right: 40px;
 
   @media (max-width: $vp-1199) {
     font-size: 18px;
     line-height: 27px;
+    padding-right: 0;
   }
 }
 
@@ -194,6 +198,7 @@
   font-weight: 400;
   line-height: 21px;
   color: $black-blue;
+  padding-right: 40px;
 
   &:hover {
     opacity: 50%;
@@ -202,6 +207,7 @@
   @media (max-width: $vp-1199) {
     font-size: 18px;
     line-height: 27px;
+    padding-right: 0;
   }
 }
 
@@ -223,7 +229,6 @@
     background-color: $input-border;
 
     @media (max-width: $vp-1199) {
-      height: 129px;
       top: 9px;
       left: 44.2%;
     }
@@ -264,10 +269,11 @@
   margin-bottom: 18px;
 
   @media (max-width: $vp-1199) {
-    // margin-bottom: 0;
+    width: 230px;
   }
 
   @media (max-width: $vp-767) {
     margin-bottom: 17px;
+    width: 100%;
   }
 }

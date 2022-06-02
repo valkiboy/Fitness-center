@@ -178,12 +178,11 @@ if (typeof (contactsForm) !== 'undefined' && contactsForm !== null) {
 const promoButton = document.querySelector('.promo__button');
 const coachesButtonPrev = document.querySelector('.coaches__button-prev');
 const coachesButtonNext = document.querySelector('.coaches__button-next');
-// const imageSlidesFirst = document.querySelector('.image-slider__slide-1');
-const imageSlidesTwo = document.querySelectorAll('.image-slider__slide-2');
-const imageSlideThree = document.querySelector('.image-slider__slide-3');
-// const imageSlideLast = document.querySelector('.image-slider__slide-8');
 const promotionsMainButton = document.querySelector('.promotions__main-button');
 
+const myImageSlider = document.querySelector('.swiper').swiper;
+let imageSlideFirst = myImageSlider.slides[0];
+let imageSlideLast = myImageSlider.slides[7];
 
 if (typeof (promoButton && coachesButtonPrev) !== 'undefined' && promoButton && coachesButtonPrev !== null) {
 
@@ -203,18 +202,19 @@ if (typeof (promoButton && coachesButtonPrev) !== 'undefined' && promoButton && 
   });
 }
 
-if (typeof (coachesButtonNext && imageSlideThree) !== 'undefined' && coachesButtonNext && imageSlideThree !== null) {
+if (typeof (coachesButtonNext && imageSlideFirst) !== 'undefined' && coachesButtonNext && imageSlideFirst !== null) {
 
 
   coachesButtonNext.addEventListener('keydown', function (evt) {
     if (!evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
-      imageSlideThree.focus();
+      imageSlideFirst.focus();
+      myImageSlider.slideTo(imageSlideFirst.index, 800);
     }
   });
 
 
-  imageSlideThree.addEventListener('keydown', function (evt) {
+  imageSlideFirst.addEventListener('keydown', function (evt) {
     if (evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
       coachesButtonNext.focus();
@@ -222,22 +222,19 @@ if (typeof (coachesButtonNext && imageSlideThree) !== 'undefined' && coachesButt
   });
 }
 
-if (typeof (imageSlidesTwo && promotionsMainButton) !== 'undefined' && imageSlidesTwo && promotionsMainButton !== null) {
+if (typeof (imageSlideLast && promotionsMainButton) !== 'undefined' && imageSlideLast && promotionsMainButton !== null) {
 
+  imageSlideLast.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      promotionsMainButton.focus();
+    }
 
-  imageSlidesTwo.forEach(function (imageSlideTwo) {
-    imageSlideTwo.addEventListener('keydown', function (evt) {
-      if (!evt.shiftKey && evt.key === 'Tab') {
-        evt.preventDefault();
-        promotionsMainButton.focus();
+    promotionsMainButton.addEventListener('keydown', function (event) {
+      if (event.shiftKey && event.key === 'Tab') {
+        event.preventDefault();
+        imageSlideLast.focus();
       }
-
-      promotionsMainButton.addEventListener('keydown', function (event) {
-        if (event.shiftKey && event.key === 'Tab') {
-          event.preventDefault();
-          imageSlideTwo.focus();
-        }
-      });
     });
   });
 }

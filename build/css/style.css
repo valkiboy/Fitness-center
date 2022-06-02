@@ -2132,6 +2132,7 @@ input:-ms-input-placeholder {
   font-weight: 700;
   line-height: 24px;
   margin: 0 0 3px;
+  padding-right: 40px;
 }
 
 .contacts__inner p {
@@ -2139,6 +2140,7 @@ input:-ms-input-placeholder {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
+  padding-right: 40px;
 }
 
 .contacts__inner a {
@@ -2146,6 +2148,7 @@ input:-ms-input-placeholder {
   font-weight: 400;
   line-height: 21px;
   color: #102654;
+  padding-right: 40px;
 }
 
 .contacts__inner a:hover {
@@ -2965,20 +2968,22 @@ input:-ms-input-placeholder {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 6px;
+    padding-right: 0;
   }
 
   .contacts__inner p {
     font-size: 18px;
     line-height: 27px;
+    padding-right: 0;
   }
 
   .contacts__inner a {
     font-size: 18px;
     line-height: 27px;
+    padding-right: 0;
   }
 
   .contacts__wrap::after {
-    height: 129px;
     top: 9px;
     left: 44.2%;
   }
@@ -2991,6 +2996,10 @@ input:-ms-input-placeholder {
   .contacts__inn {
     width: 290px;
     margin-bottom: 5px;
+  }
+
+  .contacts__inn div {
+    width: 230px;
   }
 
   .page-footer__wrapper {
@@ -3620,6 +3629,7 @@ input:-ms-input-placeholder {
 
   .contacts__inn div {
     margin-bottom: 17px;
+    width: 100%;
   }
 
   .page-footer {
