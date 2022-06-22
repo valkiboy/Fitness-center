@@ -2106,12 +2106,12 @@ input:-ms-input-placeholder {
 
 .contacts__wrap {
   padding-left: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
+  column-gap: 4%;
   position: relative;
 }
 
@@ -2119,20 +2119,19 @@ input:-ms-input-placeholder {
   content: "";
   position: absolute;
   display: block;
-  height: 76%;
   width: 1px;
   top: 6px;
+  bottom: 48px;
   left: 41.6%;
   background-color: #74819c;
 }
 
-.contacts__inn {
-  width: 269px;
-}
-
-.contacts__inn div {
+.contacts__wrap div {
   width: 214px;
   margin-bottom: 18px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .page-footer {
@@ -2897,6 +2896,7 @@ input:-ms-input-placeholder {
 
   .contacts__wrap::after {
     top: 9px;
+    bottom: 24px;
     left: 44.2%;
   }
 
@@ -2905,12 +2905,7 @@ input:-ms-input-placeholder {
     margin-right: 32px;
   }
 
-  .contacts__inn {
-    width: 290px;
-    margin-bottom: 5px;
-  }
-
-  .contacts__inn div {
+  .contacts__wrap div {
     width: 230px;
   }
 
@@ -3525,19 +3520,13 @@ input:-ms-input-placeholder {
   }
 
   .contacts__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
     margin-left: -1px;
   }
 
-  .contacts__inn {
-    width: 223px;
-    margin-bottom: 5px;
-  }
-
-  .contacts__inn div {
+  .contacts__wrap div {
     margin-bottom: 17px;
     width: 100%;
   }
